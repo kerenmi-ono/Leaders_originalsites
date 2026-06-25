@@ -57,6 +57,20 @@ body {
 .future-copy {
   position: absolute;
 }
+.img {
+  transform-origin: center center;
+  transition:
+    transform 180ms ease,
+    filter 180ms ease,
+    box-shadow 180ms ease;
+  will-change: transform, filter;
+}
+.img.sound-active {
+  transform: scale(1.03) translateY(-6px);
+  filter: saturate(1.05) contrast(1.03);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.18);
+  z-index: 2;
+}
 .hero-line {
   left: 45.5px;
   top: 0;
@@ -163,12 +177,22 @@ body {
 .media-frame {
   overflow: hidden;
 }
-.media-frame video,
-.media-frame iframe {
+.media-frame video {
   width: 100%;
   height: 100%;
-  border: 0;
   object-fit: cover;
+}
+.video-error {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
 }
 #index-container {
   position: fixed;

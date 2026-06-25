@@ -126,12 +126,18 @@
           background: #000;
         "
       >
-        <iframe
-          src="https://www.youtube.com/embed/Z2Fo-ucJrUc?autoplay=1&mute=1&loop=1&playlist=Z2Fo-ucJrUc&playsinline=1&rel=0"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <video
+          id="main-video"
+          src="assets/process.mp4"
+          muted
+          autoplay
+          loop
+          playsinline
+          preload="auto"
+        ></video>
+        <div id="video-error" class="video-error">
+          Video could not be loaded.
+        </div>
       </div>
       <div
         class="accent"
@@ -245,7 +251,7 @@
           top: 153px;
           width: 576px;
           height: 324px;
-          object-fit: cover;
+          /* object-fit: cover */
         "
       />
       <img
@@ -410,17 +416,17 @@
         </svg>
       </div>
 
-      <p class="section-title" style="left: 3096px; top: 17px">Joboji</p>
-      <p class="section-title" style="left: 7195px; top: 17px">Process</p>
-      <p class="section-title" style="left: 18135px; top: 17px">Living</p>
-      <p class="section-title" style="left: 21648px; top: 17px">Future</p>
+      <p class="section-title" style="left: 3096px; top: 15px">Joboji</p>
+      <p class="section-title" style="left: 7195px; top: 15px">Process</p>
+      <p class="section-title" style="left: 18135px; top: 15px">Living</p>
+      <p class="section-title" style="left: 21648px; top: 15px">Future</p>
 
-      <p class="subtitle" style="left: 3265px; top: 45px">浄法寺</p>
-      <p class="subtitle" style="left: 7399px; top: 45px">工程</p>
-      <p class="subtitle" style="left: 18314px; top: 45px">生活</p>
-      <p class="subtitle" style="left: 21837px; top: 45px">未来</p>
+      <p class="subtitle" style="left: 3305px; top: 67px">浄法寺</p>
+      <p class="subtitle" style="left: 7439px; top: 67px">工程</p>
+      <p class="subtitle" style="left: 18354px; top: 67px">生活</p>
+      <p class="subtitle" style="left: 21877px; top: 67px">未来</p>
 
-      <p class="hero-text" style="left: 65px; top: 884px">漆の國、浄法寺</p>
+      <p class="hero-text" style="left: 80px; top: 890px">漆の國、浄法寺</p>
       <p class="hero-copy" style="left: 733px; top: 63px; width: 699px">
         The allure of lacquerware lies not merely in its beauty.<br />It is a
         quiet and enriching experience in itself, one that allows you to feel
@@ -443,7 +449,7 @@
       <div class="text-block" style="left: 4376px; top: 414px; width: 372px">
         北の山々に抱かれた浄法寺では、静かな森の中で漆の木が育つ。幾年もの時を重ねて採られた一滴の漆は、職人の手によって器となり、土地の風土とともに受け継がれていく。
       </div>
-      <div class="feature-copy" style="left: 3542px; top: 609px; width: 305px">
+      <div class="feature-copy" style="left: 3562px; top: 359px; width: 305px">
         <p>
           The origins of Joboji lacquerware are said to lie in the production of
           lacquer used in the construction and restoration of temples built
@@ -492,14 +498,14 @@
         The lacquer forests generously dedicate countless years to produce a
         single drop of blessing.
       </div>
-      <div class="process-copy" style="left: 7326px; top: 959px; width: 275px">
+      <div class="process-copy" style="left: 7336px; top: 943px; width: 275px">
         Only about 200g of lacquer can be harvested from a single lacquer tree.
       </div>
-      <div class="process-copy" style="left: 8660px; top: 933px; width: 275px">
+      <div class="process-copy" style="left: 8670px; top: 900px; width: 275px">
         As the craftsman's hands trace the trunk, a drop of water, accumulated
         over many years, seeps out like the blood of the forest.
       </div>
-      <div class="process-copy" style="left: 9782px; top: 932px; width: 275px">
+      <div class="process-copy" style="left: 9782px; top: 900px; width: 275px">
         The lacquer, collected drop by drop, breathes quietly in the barrel,
         holding the memories of the trees in its luster.
       </div>
@@ -511,13 +517,13 @@
       <div class="process-copy" style="left: 7784px; top: 329px; width: 109px">
         漆の森は、一滴の恵みを生むために、長い歳月を惜しみなく差し出している。
       </div>
-      <div class="process-copy" style="left: 8195px; top: 508px; width: 450px">
+      <div class="process-copy" style="left: 8195px; top: 488px; width: 450px">
         職人の手が幹をなぞると、長い歳月を蓄えた一滴が、まるで森の血潮のように滲み出る。
       </div>
       <div class="process-copy" style="left: 9786px; top: 451px; width: 105px">
         一滴ずつ集められた漆は桶の中で静かに息づき、木々の記憶を艶として湛えている。
       </div>
-      <div class="process-copy" style="left: 11646px; top: 406px; width: 436px">
+      <div class="process-copy" style="left: 11646px; top: 380px; width: 436px">
         木地は、漆器の骨格であり、その器のはじまりである。一つの木から削り出された形には、木が育った歳月と職人の手の跡が刻まれている。
       </div>
       <div class="process-copy" style="left: 12189px; top: 605px; width: 436px">
@@ -526,7 +532,7 @@
       <div class="process-copy" style="left: 14477px; top: 439px; width: 179px">
         塗りは、漆器の美しさと耐久性を生み出す重要な工程である。下地を整えた木地に漆を薄く塗り重ね、乾燥と研磨を繰り返しながら仕上げていく。一度に厚く塗るのではなく、何層にも重ねることで、漆特有の深い艶と透明感が生まれる。浄法寺塗では、国産漆の豊かな表情を生かしながら、使うほどに味わいを増す器へと仕上げていく。その静かな輝きには、職人が積み重ねた時間と技術が映し出されている。
       </div>
-      <div class="process-copy" style="left: 15240px; top: 716px; width: 347px">
+      <div class="process-copy" style="left: 15240px; top: 416px; width: 347px">
         The lacquering process is a crucial step in creating the beauty and
         durability of lacquerware. Thin layers of lacquer are applied to the
         prepared wooden base, and the piece is finished through repeated drying
@@ -554,7 +560,7 @@
       <div class="living-copy" style="left: 19959px; top: 245px; width: 777px">
         暮らしに寄り添う漆器は、毎日の食卓に静かに佇む。朝の一杯の味噌汁、家族との夕食、何気ない日常の積み重ねを受け止めながら、少しずつ艶を深めていく。使う人の手に馴染み、時を重ねるごとに表情を変えるその姿は、道具でありながら暮らしの記憶を宿す存在となる。
       </div>
-      <div class="living-copy" style="left: 20583px; top: 733px; width: 347px">
+      <div class="living-copy" style="left: 20583px; top: 680px; width: 347px">
         Lacquerware that accompanies everyday life quietly stands on the dining
         table every day. A bowl of miso soup in the morning, dinner with family,
         it absorbs the accumulation of ordinary daily moments, gradually
@@ -613,7 +619,7 @@
           <button data-target="Joboji">浄法寺とは</button>
           <button data-target="Process">漆塗りについて</button>
           <button data-target="Living">暮らしに寄り添う漆器</button>
-          <button data-target="Future">未来の継承</button>
+          <button data-target="Future">未来への継承</button>
         </div>
       </div>
     </div>
